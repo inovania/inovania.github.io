@@ -1,0 +1,99 @@
+<div class="d-row">
+    <div class="d-col-8">
+        <div id="accordion"></div>
+            <!--
+                style="width: 1124px;"
+            -->
+    </div>
+</div>
+<div id="item1">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias dicta
+    similique asperiores tempora fuga consectetur voluptatem itaque quibusdam, laborum
+    placeat omnis ad quia vero sunt obcaecati officiis, delectus, perferendis minus.
+</div>
+<div id="item2">
+
+    <table>
+        <caption>tabla de contenido desconocido</caption>
+        <thead>
+            <tr><th>encabezado 1</th><th>encabezado 2</th><th>encabezado 3</th><th>encabezado 4</th><th>encabezado 5</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>elemento 1</td><td>elemento 2</td><td>elemento 3</td><td>elemento 4</td><td>elemento 5</td></tr>
+            <tr><td>elemento 1</td><td>elemento 2</td><td>elemento 3</td><td>elemento 4</td><td>elemento 5</td></tr>
+            <tr><td>elemento 1</td><td>elemento 2</td><td>elemento 3</td><td>elemento 4</td><td>elemento 5</td></tr>
+            <tr><td>elemento 1</td><td>elemento 2</td><td>elemento 3</td><td>elemento 4</td><td>elemento 5</td></tr>
+            <tr><td>elemento 1</td><td>elemento 2</td><td>elemento 3</td><td>elemento 4</td><td>elemento 5</td></tr>
+            <tr><td>elemento 1</td><td>elemento 2</td><td>elemento 3</td><td>elemento 4</td><td>elemento 5</td></tr>
+            <tr><td>elemento 1</td><td>elemento 2</td><td>elemento 3</td><td>elemento 4</td><td>elemento 5</td></tr>
+            <tr><td>elemento 1</td><td>elemento 2</td><td>elemento 3</td><td>elemento 4</td><td>elemento 5</td></tr>
+            <tr><td>elemento 1</td><td>elemento 2</td><td>elemento 3</td><td>elemento 4</td><td>elemento 5</td></tr>
+            <tr><td>elemento 1</td><td>elemento 2</td><td>elemento 3</td><td>elemento 4</td><td>elemento 5</td></tr>
+        </tbody>
+    </table>
+
+</div>
+<div id="item3">
+    Dolores doloremque maiores odit provident sint nulla corrupti! Dolorem
+    tempora, error ipsum velit est! Aliquam voluptate optio, iure incidunt? Autem 
+    aboriosam quibusdam veniam, nulla quis eum cum et sunt tempora!
+</div>
+
+<script type="text/javascript">
+
+    dive( '#accordion' ).divAccordion({
+        data: [
+            { title: 'Contenido 1', template: '#item1' },
+            { title: 'Contenido 2', template: '#item2' },
+            { title: 'Contenido 3', template: '#item3' },
+            { title: 'Contenido 4', template: diving( '<div>',{
+                text: 'Element create in the moment of constraint accordion'
+            }) },
+            { title: 'Contenido 5', content: 'This text is just text'}
+        ]
+    });
+
+    
+</script>
+<!--ul>
+     <li>
+        <input type="radio" name="select" class="d-accordion-select" checked />
+        <div class="d-accordion-title">
+            <span>Title</span>
+        </div>
+        <div class="d-accordion-content">
+            <h1>conteido1</h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, harum aliquam ratione architecto sit, excepturi veniam mollitia laboriosam earum, est illum eaque commodi ullam accusantium praesentium et rerum similique, ea.
+        </div>
+        <div class="d-accordion-separator"></div>
+    </li> 
+     <li>
+        <input type="radio" name="select" class="d-accordion-select" />
+        <div class="d-accordion-title">
+            <span>Title</span>
+        </div>
+        <div class="d-accordion-content">
+            <h1>conteido2</h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi laboriosam aliquam doloribus necessitatibus distinctio expedita eaque in optio doloremque omnis cupiditate, vel tempore eligendi fugit quia. Debitis, saepe deserunt possimus!
+        </div>
+        <div class="d-accordion-separator"></div>
+    </li> 
+     <li>
+        <input type="radio" name="select" class="d-accordion-select" />
+        <div class="d-accordion-title">
+            <span>Title</span>
+        </div>
+        <div class="d-accordion-content">
+            <h1>conteido3</h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam dolor minus numquam nam tenetur nihil ipsum quas voluptates amet dolorem expedita dicta et libero, architecto soluta qui minima aliquam magni?
+        </div>
+        <div class="d-accordion-separator"></div>
+    </li> 
+     <li>
+        <input type="radio" name="select" class="d-accordion-select" />
+        <div class="d-accordion-title">
+            <span>Title</span>
+        </div>
+        <div class="d-accordion-content">
+            <h1>conteido4</h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga et in animi nostrum nihil dicta unde non quasi sint veniam, est dolores minus ut maiores veritatis eos enim, temporibus, neque!
+        </div>
+        <div class="d-accordion-separator"></div>
+    </li> 
+</ul-->

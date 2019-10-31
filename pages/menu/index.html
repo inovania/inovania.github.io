@@ -1,0 +1,18 @@
+<div id="d-menu"></div>
+<script type="text/javascript">
+	dive( '#d-menu' ).divMenu({
+		data: [{ text: 'item', href: '#', items: [
+				{ text: 'sub Item', href: '#' },
+				{ text: 'sub Item', href: '#' , items:[
+					{ text: 'sub Item', href: '#'},
+					{ text: 'sub Item', href: '#'}
+				]}
+			] },
+			{ text: 'item', href: '#', callback: configure }],
+		widthItem: '100px'
+	});
+
+function configure( elem ){
+	console.log( this, elem );
+}
+</script>

@@ -1,0 +1,52 @@
+<div class="d-row">
+	<div class="d-col-12">
+		<article>
+			<header>TabsTrip</header>
+			<section>
+				<p>Te permite crear un tabstrip a parti de un elemento ya existente como template o bien con su contenido </p>
+			</section>
+			<section>
+				<div class="d-row">
+					<div class="d-col-6">
+						<div id="tabstrip"></div>
+					</div>
+				</div>
+			</section>
+		</article>
+	</div>
+</div>
+
+<div id="content3" hidden>
+	 <table>
+        <caption>tabla de contenido desconocido</caption>
+        <thead>
+            <tr><th>encabezado 1</th><th>encabezado 2</th><th>encabezado 3</th><th>encabezado 4</th><th>encabezado 5</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>elemento 1</td><td>elemento 2</td><td>elemento 3</td><td>elemento 4</td><td>elemento 5</td></tr>
+            <tr><td>elemento 1</td><td>elemento 2</td><td>elemento 3</td><td>elemento 4</td><td>elemento 5</td></tr>
+            <tr><td>elemento 1</td><td>elemento 2</td><td>elemento 3</td><td>elemento 4</td><td>elemento 5</td></tr>
+            <tr><td>elemento 1</td><td>elemento 2</td><td>elemento 3</td><td>elemento 4</td><td>elemento 5</td></tr>
+            <tr><td>elemento 1</td><td>elemento 2</td><td>elemento 3</td><td>elemento 4</td><td>elemento 5</td></tr>
+            <tr><td>elemento 1</td><td>elemento 2</td><td>elemento 3</td><td>elemento 4</td><td>elemento 5</td></tr>
+            <tr><td>elemento 1</td><td>elemento 2</td><td>elemento 3</td><td>elemento 4</td><td>elemento 5</td></tr>
+            <tr><td>elemento 1</td><td>elemento 2</td><td>elemento 3</td><td>elemento 4</td><td>elemento 5</td></tr>
+            <tr><td>elemento 1</td><td>elemento 2</td><td>elemento 3</td><td>elemento 4</td><td>elemento 5</td></tr>
+            <tr><td>elemento 1</td><td>elemento 2</td><td>elemento 3</td><td>elemento 4</td><td>elemento 5</td></tr>
+        </tbody>
+    </table>
+
+</div>
+<script type="text/javascript">
+	dive( '#tabstrip' ).divTabsTrip({
+		data: [ { title: 'tab-1', content: ' contenido volumen 1 ', name:'tab-1'},
+				{ title: 'tab-2', content: ' contenido volumen 2 ', name:'tab-2'},
+				{ title: 'tab-3', content: '#content3', name:'tab-3'},
+				{ title: 'tab-4', content: diving( '<div>',{
+					text: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias adipisci vitae quod, aspernatur culpa sapiente modi quidem, excepturi voluptas eos aut illo nostrum officiis totam fugiat soluta expedita! Mollitia, optio! '
+				}), name:'tab-4'} ],
+		options: {
+			open: 'tab-2'
+		}
+	});
+</script>

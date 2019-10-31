@@ -1,0 +1,38 @@
+<article>
+	<header>
+		<h1>Boton</h1>
+	</header>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam aut dolorum ipsum quam mollitia, dignissimos quibusdam veniam! Beatae iusto illum illo voluptatum, eaque at enim dolorum sequi, temporibus, reiciendis necessitatibus.</p>
+	
+	<div id="principal"></div>
+	<script>
+		dive( '#principal' ).append(
+			dive( '<div>',{ id: 'default'  } ) ).append(
+			dive( '<div>',{ id: 'primary'  } ) ).append(
+			dive( '<div>',{ id: 'success'  } ) ).append(
+			dive( '<div>',{ id: 'second'   } ) ).append(
+			dive( '<div>',{ id: 'danger'   } ) ).append(
+			dive( '<div>',{ id: 'warning'  } ) ).append(
+			dive( '<div>',{ id: 'info'     } ) ).append(
+			dive( '<div>',{ id: 'link'     } ) ).append(
+			dive( '<div>',{ id: 'disabled' } ) );
+
+
+		dive( '#default' ).divButton(  {text: 'default',  class: 'd-button', type: 'default' , click: function(){ console.log( 'default' );  } } );
+		dive( '#primary' ).divButton(  {text: 'primary',  class: 'd-button', type: 'primary' , click: function(){ console.log( 'primary' );  } } );
+		dive( '#success' ).divButton(  {text: 'success',  class: 'd-button', type: 'success' , click: function(){ console.log( 'success' );  } } );
+		dive( '#second' ).divButton(   {text: 'second',   class: 'd-button', type: 'second'  , click: function(){ console.log( 'second' );   } } );
+		dive( '#danger' ).divButton(   {text: 'danger',   class: 'd-button', type: 'danger'  , click: function(){ console.log( 'danger' );   } } );
+		dive( '#warning' ).divButton(  {text: 'warning',  class: 'd-button', type: 'warning' , click: function(){ console.log( 'warning' );  } } );
+		dive( '#info' ).divButton(     {text: 'info',     class: 'd-button', type: 'info'    , click: function(){ console.log( 'info' );     } } );
+		dive( '#link' ).divButton(     {text: 'link',     class: 'd-button', type: 'link'    , click: function(){ console.log( 'link' );     } } );
+		dive( '#disabled' ).divButton( {text: 'disabled', class: 'd-button', type: 'disabled', click: function(){ console.log( 'disabled' ); } } );
+	</script>
+</article>
+<div class="d-clear"></div>
+<article>
+	<header>
+		<h2>header2</h2>
+	</header>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id adipisci odio hic sit ipsum deleniti repellat cum ducimus accusamus consequatur, dolore consequuntur fugiat, provident possimus ipsam, eum corporis enim rem.</p>
+</article>
